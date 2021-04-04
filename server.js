@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Hello World',
+    title: 'Planner',
     people: people.profiles
   });
 });

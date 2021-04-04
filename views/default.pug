@@ -10,3 +10,5 @@ html
         header.header
           h1 #{title}
       block content
+    script(src='/javascripts/googlecal.js')
+    script(async, defer, src='https://apis.google.com/js/api.js' onload='this.onload=function(){};handleClientLoad()' onreadystatechange='if (this.readyState === "complete") this.onload()')

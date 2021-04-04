@@ -1,4 +1,21 @@
 extends default
 
 block content
+
   div.container
+    block buttons
+      button(type='button' id='authorize_button')
+        b Authorize
+      button(type='button' id='signout_button')
+        b Sign out
+    block errmsg
+      pre(id='content' style='white-space: pre-wrap;')
+
+//-     each event in events
+//-       div.person
+//-         div.person-image(style=`background: url('/images/${person.imgSrc}') top center
+//-         no-repeat; background-size: cover;`)
+//-         h2.person-name
+//-           | #{person.firstname} #{person.lastname}
+//-         a(href=`/profile?id=${person.id}`)
+//-           | View Profile
